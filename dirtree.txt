@@ -1,0 +1,22 @@
+ Volume in drive C is Gateway
+ Volume Serial Number is A041-DADD
+
+ Directory of C:\Users\YuhasMich\HakataYume
+
+11/16/2024  10:31 AM    <DIR>          .
+11/16/2024  10:31 AM    <DIR>          ..
+11/16/2024  08:54 AM                56 .gitignore
+11/16/2024  09:00 AM    <DIR>          .jekyll-cache
+11/16/2024  08:54 AM               419 404.html
+11/16/2024  08:54 AM               539 about.markdown
+11/16/2024  10:24 AM    <DIR>          assets
+11/16/2024  10:31 AM                 0 dirtree.txt
+11/16/2024  08:54 AM             1,340 Gemfile
+11/16/2024  08:55 AM             2,262 Gemfile.lock
+11/16/2024  09:43 AM    <DIR>          index
+11/16/2024  08:54 AM               175 index.markdown
+11/16/2024  08:54 AM             2,079 _config.yml
+11/16/2024  08:54 AM    <DIR>          _posts
+11/16/2024  09:00 AM    <DIR>          _site
+               8 File(s)          6,870 bytes
+               7 Dir(s)  126,407,024,640 bytes free
