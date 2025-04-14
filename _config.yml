@@ -1,19 +1,32 @@
-# Site settings
-# Personalize your site settings here
+# -------------------------------
+# URL & BASEURL CONFIGURATION
+# Toggle these two lines depending on where you're building:
+# -------------------------------
 
-title: HakataYume # Replaces "Your awesome title"
-email: HakataYume1970@gmail.com # Optional, replace if you'd like
+# --- Local development (localhost:4000)
+# url: "http://127.0.0.1:4000"
+# baseurl: ""
+
+# --- GitHub Pages deployment
+url: "https://yuhasmich.github.io"
+baseurl: "/HakataYume"
+
+# Optional: For future use with custom domain
+# url: "https://hakatayume.com"
+# baseurl: ""
+
+# -------------------------------
+# Other settings unchanged below
+# -------------------------------
+
+title: HakataYume
+email: HakataYume1970@gmail.com
 description: >-
   A digital scrapbook for Hakata memories. Here I share stories and photos
   from my time in Japan, including the memorable encounter with the monk
   at Shikaumi Shrine. I am also preparing for an upcoming trip to revisit
   these places and document new experiences
 
-baseurl: "" # Keep as is for local development
-url: "https://hakatayume.com"
-# url: "http://127.0.0.1:4000" # Base URL for local testing
-# twitter_username: "" # Optional, remove or replace
-# github_username: ""  # Optional, remove or replace
 
 # Build settings
 theme: minima
