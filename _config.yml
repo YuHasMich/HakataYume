@@ -1,0 +1,38 @@
+# Site settings
+# Personalize your site settings here
+
+title: HakataYume # Replaces "Your awesome title"
+email: HakataYume1970@gmail.com # Optional, replace if you'd like
+description: >-
+  A digital scrapbook for Hakata memories. Here I share stories and photos
+  from my time in Japan, including the memorable encounter with the monk
+  at Shikaumi Shrine. I am also preparing for an upcoming trip to revisit
+  these places and document new experiences
+
+baseurl: "" # Keep as is for local development
+url: "https://hakatayume.com"
+# url: "http://127.0.0.1:4000" # Base URL for local testing
+# twitter_username: "" # Optional, remove or replace
+# github_username: ""  # Optional, remove or replace
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+# Add additional files or folders if needed
+exclude:
+  - dirtree.txt # Example: Exclude temporary files
+
+kramdown:
+  parse_block_html: true
+
+sass:
+  style: compressed
+assets:
+  source: "assets"
+
+description_jp: >-
+  博多の思い出を綴るデジタル・スクラップブック。日本での出来事や写真、特に志賀海神社での僧侶との忘れがたい出会いを共有しています。
+  これから再びその地を訪れ、新たな体験を記録する旅の準備もしています。
