@@ -7,13 +7,13 @@
 # url: "http://127.0.0.1:4000"
 # baseurl: ""
 
-# --- GitHub Pages deployment
-url: "https://yuhasmich.github.io"
-baseurl: "/HakataYume"
+# --- GitHub Pages deployment (commented out now)
+# url: "https://yuhasmich.github.io"
+# baseurl: "/HakataYume"
 
-# Optional: For future use with custom domain
-# url: "https://hakatayume.com"
-# baseurl: ""
+# --- Active: Custom domain
+url: "https://hakatayume.com"
+baseurl: ""
 
 # -------------------------------
 # Other settings unchanged below
