@@ -5,12 +5,6 @@
 
 # --- Local development (localhost:4000)
 # url: "http://127.0.0.1:4000"
-# baseurl: ""
-
-# --- GitHub Pages deployment (commented out now)
-# url: "https://yuhasmich.github.io"
-# baseurl: "/HakataYume"
-
 # --- Active: Custom domain
 url: "https://hakatayume.com"
 baseurl: ""

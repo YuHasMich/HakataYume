@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en' }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{% if page.lang == 'jp' %}{{ site.description_jp }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{% if page.lang == 'jp' %}{{ site.description_jp }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- Custom styles to reduce spacing between headings and images -->
+  <style>
+    h1 {
+      margin-bottom: 0.5em;
+    }
+    .gallery img {
+      margin-top: 0;
+    }
+  </style>
+</head>
+ <body>
+  <!-- Unified nav bar with language-aware gallery labels -->
+  <div class="top-nav" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
+  </div>
+
     <header></header>
 
     <main>
@@ -20,4 +34,5 @@
       </p>
     </footer>
   </body>
+  
 </html>
