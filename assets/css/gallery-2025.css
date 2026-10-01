@@ -1,0 +1,14 @@
+.trip-gallery { max-width: 1000px; margin: 0 auto; padding: 24px 20px; color: #27332d; }
+.trip-gallery nav, .trip-gallery h1, .trip-gallery .intro { text-align: center; }
+.trip-gallery nav { line-height: 2; }
+.trip-gallery h1 { margin-top: 24px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+.trip-gallery .intro { max-width: 650px; margin: 16px auto 32px; line-height: 1.7; }
+.trip-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+.trip-gallery figure { margin: 0; }
+.trip-grid img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.trip-gallery figcaption { font-size: 1.05rem; line-height: 1.5; padding-top: 10px; text-align: center; }
+.trip-gallery a { color: #28594c; }
+.trip-gallery a:focus-visible { outline: 3px solid #ad793a; outline-offset: 5px; }
+.trip-gallery .festival { max-width: 720px; margin: 40px auto 0; }
+.festival video { display: block; width: 100%; height: auto; border-radius: 4px; }
+@media (max-width: 600px) { .trip-grid { grid-template-columns: 1fr; } }

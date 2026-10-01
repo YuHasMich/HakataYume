@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign japanese = false %}
+{% if page.lang == 'ja' %}{% assign japanese = true %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/gallery-2025.css' | relative_url }}">
+<div class="trip-gallery">
+  <nav aria-label="Language and galleries">
+    <a href="{{ '/2025/' | relative_url }}" lang="en">English</a> ·
+    <a href="{{ '/jp/2025/' | relative_url }}" lang="ja">日本語</a>
+    <span> · </span><a href="{{ '/1970/' | relative_url }}">1970</a> ·
+    {% if japanese %}<a href="{{ '/jp/' | relative_url }}">ホーム</a>{% else %}<a href="{{ '/' | relative_url }}">Home</a>{% endif %}
+  </nav>
+  <h1>{{ page.title }}</h1>
+  <p class="intro">{% if japanese %}少年時代を過ごした福岡へ。2025年の旅で出会った人々、再訪した場所、心に残るひととき。{% else %}Returning to Fukuoka, where I lived as a boy. People, places, and moments from my 2025 visit.{% endif %}</p>
+  <div class="trip-grid">
+    {% for photo in site.data.gallery_2025 %}
+    {% if japanese %}{% assign caption = photo.ja %}{% else %}{% assign caption = photo.en %}{% endif %}
+    {% assign photo_url = '/assets/images/2025/' | append: photo.file %}
+    <figure>
+      <a href="{{ photo_url | relative_url }}"><img src="{{ photo_url | relative_url }}" alt="{{ caption | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" {% unless forloop.first %}loading="lazy"{% endunless %} decoding="async"></a>
+      <figcaption>{{ caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  <figure class="festival">
+    <video controls playsinline preload="none" poster="{{ '/assets/images/2025/dontaku-festival-poster.jpg' | relative_url }}">
+      <source src="{{ '/assets/videos/2025/dontaku-festival-2025.mp4' | relative_url }}" type="video/mp4">
+      <a href="{{ '/assets/videos/2025/dontaku-festival-2025.mp4' | relative_url }}">{% if japanese %}動画を開く{% else %}Open video{% endif %}</a>
+    </video>
+    <figcaption>{% if japanese %}博多どんたく、福岡、2025年{% else %}Hakata Dontaku Festival, Fukuoka, 2025{% endif %}</figcaption>
+  </figure>
+</div>

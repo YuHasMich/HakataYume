@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
-  <meta name="description" content="{% if page.lang == 'jp' %}{{ site.description_jp }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.lang == 'jp' or page.lang == 'ja' %}{{ site.description_jp }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
   <!-- Custom styles to reduce spacing between headings and images -->
